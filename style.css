@@ -1,0 +1,139 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#calculator{
+    max-width: 450px;
+    border-radius: 15px;
+    background-color: rgb(63, 53, 53);
+    border: 10px solid rgb(0, 0, 0);
+    
+}
+.cal{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:5px;
+    padding: 25px;
+}
+button{
+    background-color: rgb(174, 101, 13);
+    border-radius: 50px;
+    width: 80px;
+    height: 80px;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+#display{
+    width: 91%;
+    padding: 20px;
+    font-size: 5rem;
+    text-align: right;
+    border:none;
+   border-bottom:10px solid black ;
+    border-radius: 5px;
+   
+}
+button:hover{
+    background-color: rgb(232, 147, 43);
+}
+button:active{
+    background-color: rgb(0, 147, 53);   
+}
+.main-element{
+    background-color: black;
+    color: bisque;
+}
+.main-element:hover{
+    background-color: rgb(86, 78, 78);
+}
+.main-element:active{
+    background-color: rgb(43, 41, 41);
+}
+
+@media all and (max-width:500px){
+    body{
+      
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70vh;
+    }
+    #calculator{
+        max-width: 300px;
+        border-radius: 15px;
+        background-color: rgb(63, 53, 53);
+        border: 10px solid rgb(0, 0, 0);
+        
+    }
+    .cal{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap:2px;
+        padding: 12px;
+    }
+    button{
+        background-color: rgb(174, 101, 13);
+        border-radius: 50px;
+        width: 60px;
+        height: 60px;
+        border: none;
+        color: white;
+        font-size: 2rem;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    #display{
+        width: 87%;
+        font-size: 3rem;
+      
+       
+    }
+
+}
+
+@media all and (max-width:300px){
+    body{
+      
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+    }
+    #calculator{
+        max-width: 200px;
+        border-radius: 15px;
+        background-color: rgb(63, 53, 53);
+        border: 10px solid rgb(0, 0, 0);
+        
+    }
+    .cal{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap:2px;
+        padding: 5px;
+    }
+    button{
+        background-color: rgb(174, 101, 13);
+        border-radius: 50px;
+        width: 40px;
+        height: 40px;
+        border: none;
+        color: white;
+        font-size: 1rem;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    #display{
+        width: 80%;
+        font-size: 2rem;
+      
+       
+    }
+
+}
